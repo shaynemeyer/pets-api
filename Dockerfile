@@ -7,7 +7,7 @@
 FROM python:3.4.5-slim
 
 # get some custom packages
-RUN apt-get update && apt-get install -y
+RUN apt-get update && apt-get install -y \
     build-essential \
     make \
     gcc \

@@ -3,6 +3,7 @@ from flask_mongoengine import MongoEngine
 
 db = MongoEngine()
 
+
 def create_app(**config_overrides):
     app = Flask(__name__)
 
@@ -13,7 +14,7 @@ def create_app(**config_overrides):
     app.config.update(config_overrides)
 
     # setup db
-    db.init_app(app=app)
+    db.init_app(app)
 
     # import blueprints
     from home.views import home_app

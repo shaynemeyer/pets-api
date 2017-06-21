@@ -5,7 +5,7 @@ services:
     ports:
       - "80:5000"
     volumes:
-      - /Users/shaynemeyer/udemy/restful-api-flask-course/pets-api:/opt/pets-api
+      - /Users/Shared/docker-apps/pets-api:/opt/pets-api
     links:
       - db:mongodb
     container_name: petsapi_web_1

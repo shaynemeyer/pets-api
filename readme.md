@@ -17,3 +17,9 @@ docker-compose up -d db
 ```bash
 docker-compose up web
 ```
+
+
+## Resources
+
+* [Flask Pluggable Views](http://flask.pocoo.org/docs/0.12/views/)
+* [http status codes](http://www.restapitutorial.com/httpstatuscodes.html)

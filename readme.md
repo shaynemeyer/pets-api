@@ -18,6 +18,10 @@ docker-compose up -d db
 docker-compose up web
 ```
 
+## Login to MongoDB console from web app
+```
+docker exec -it petsapi_web_1 mongo -host mongodb
+```
 
 ## Resources
 

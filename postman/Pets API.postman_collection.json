@@ -76,7 +76,7 @@
 							},
 							{
 								"key": "X-APP-TOKEN",
-								"value": "5fdb4d80-a575-48e3-b4de-73ccc8c0f132",
+								"value": "de2ad4d0-cd5b-4d5a-b85c-08d2f56c9601",
 								"description": ""
 							}
 						],
@@ -94,6 +94,16 @@
 							{
 								"key": "Content-Type",
 								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-APP-ID",
+								"value": "mobile",
+								"description": ""
+							},
+							{
+								"key": "X-APP-TOKEN",
+								"value": "de2ad4d0-cd5b-4d5a-b85c-08d2f56c9601",
 								"description": ""
 							}
 						],
@@ -148,6 +158,102 @@
 						"body": {
 							"mode": "raw",
 							"raw": ""
+						},
+						"description": ""
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "store",
+			"description": "",
+			"item": [
+				{
+					"name": "POST create store",
+					"request": {
+						"url": "localhost/stores/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-APP-ID",
+								"value": "mobile",
+								"description": ""
+							},
+							{
+								"key": "X-APP-TOKEN",
+								"value": "de2ad4d0-cd5b-4d5a-b85c-08d2f56c9601",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"neighborhood\": \"College Point\",\n    \"street_address\": \"123 Main Street\",\n    \"city\": \"New York\",\n    \"state\": \"NY\",\n    \"zip\": \"10003\",\n    \"phone\": \"718-453-3232\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET all stores",
+					"request": {
+						"url": "localhost/stores/",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-APP-ID",
+								"value": "mobile",
+								"description": ""
+							},
+							{
+								"key": "X-APP-TOKEN",
+								"value": "de2ad4d0-cd5b-4d5a-b85c-08d2f56c9601",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"neighborhood\": \"College Point\",\n    \"street_address\": \"123 Main Street\",\n    \"city\": \"New York\",\n    \"state\": \"NY\",\n    \"zip\": \"10003\",\n    \"phone\": \"718-453-3232\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "GET individual store",
+					"request": {
+						"url": "localhost/stores/6e01b0bd-07d8-4844-b49e-636b178ec7a4",
+						"method": "GET",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-APP-ID",
+								"value": "mobile",
+								"description": ""
+							},
+							{
+								"key": "X-APP-TOKEN",
+								"value": "de2ad4d0-cd5b-4d5a-b85c-08d2f56c9601",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"neighborhood\": \"College Point\",\n    \"street_address\": \"123 Main Street\",\n    \"city\": \"New York\",\n    \"state\": \"NY\",\n    \"zip\": \"10003\",\n    \"phone\": \"718-453-3232\"\n}"
 						},
 						"description": ""
 					},

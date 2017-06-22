@@ -23,6 +23,11 @@ docker-compose up web
 docker exec -it petsapi_web_1 mongo -host mongodb
 ```
 
+## Run tests in docker container
+```bash
+
+```
+
 ## Resources
 
 * [Flask Pluggable Views](http://flask.pocoo.org/docs/0.12/views/)

@@ -20,7 +20,7 @@ def app_required(f):
         access = Access.objects.filter(app=app).first()
         if not access:
             return jsonify({}), 403
-        if access.token != app.token:
+        if access.token != app_token:
             return jsonify({}), 403
         if access.expires < datetime.datetime.utcnow():
             return jsonify({'error': 'TOKEN_EXPIRED'}), 403

@@ -12,7 +12,7 @@
 			"description": "",
 			"item": [
 				{
-					"name": "POST add secret",
+					"name": "POST Create new app",
 					"request": {
 						"url": "http://localhost/apps/",
 						"method": "POST",
@@ -25,7 +25,27 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"app_id\": \"mobile\",\n\t\"app_secret\": \"test\"\n}"
+							"raw": "{\n  \"app_id\": \"mobile\",\n  \"app_secret\": \"test\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "POST Create new app token",
+					"request": {
+						"url": "http://localhost/apps/access_token/",
+						"method": "POST",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n  \"app_id\": \"mobile\",\n  \"app_secret\": \"test\"\n}"
 						},
 						"description": ""
 					},
@@ -51,12 +71,12 @@
 							},
 							{
 								"key": "X-APP-ID",
-								"value": "me ",
+								"value": "mobile",
 								"description": ""
 							},
 							{
-								"key": "X-APP-SECRET",
-								"value": "mySecret",
+								"key": "X-APP-TOKEN",
+								"value": "5fdb4d80-a575-48e3-b4de-73ccc8c0f132",
 								"description": ""
 							}
 						],
@@ -79,7 +99,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"Lala\"\n}"
+							"raw": "{\n\t\"name\": \"Lala\"\n}"
 						},
 						"description": ""
 					},
@@ -113,7 +133,7 @@
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n  \"name\": \"Lala\"\n}"
+							"raw": "{\n\t\"name\": \"Lala\"\n}"
 						},
 						"description": ""
 					},

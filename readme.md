@@ -1,7 +1,17 @@
 # Pets API
 A REST API example written in Python and Flask.
 
+## Getting started
+Create a file name settings.py that contains the following
 
+```
+SECRET_KEY = 'something'
+DEBUG = True
+MONGODB_HOST = 'mongodb'
+MONGODB_DB = 'pets-api'
+```
+
+For security, I add my settings.py file to my .gitignore file so that it is not stored in source control.
 
 ## Build the Docker Containers
 ```bash

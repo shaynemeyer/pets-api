@@ -8,13 +8,13 @@ def store_obj(store):
         "zip": store.zip,
         "phone": store.phone,
         "links": [
-            { "rel": "self", "href": "/stores/" + store.external_id }
+            {"rel": "self", "href": "/stores/" + store.external_id}
         ]
     }
 
 
 def stores_obj(stores):
-    stores = []
+    stores_obj = []
     for store in stores.items:
         stores_obj.append(store_obj(store))
 

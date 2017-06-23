@@ -10,4 +10,4 @@ pet_app.add_url_rule('/pets/', defaults={'pet_id': None}, view_func=pet_view, me
 
 pet_app.add_url_rule('/pets/', view_func=pet_view, methods=['POST',])
 
-pet_app.add_url_rule('/pets/<int:pet_id>', view_func=pet_view, methods=['GET', 'PUT', 'DELETE'])
+pet_app.add_url_rule('/pets/<pet_id>', view_func=pet_view, methods=['GET', 'PUT', 'DELETE'])

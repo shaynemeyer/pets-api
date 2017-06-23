@@ -76,14 +76,11 @@
 							},
 							{
 								"key": "X-APP-TOKEN",
-								"value": "de2ad4d0-cd5b-4d5a-b85c-08d2f56c9601",
+								"value": "b6cef89b-d0fa-4cda-9c0c-fef0ed50aa14",
 								"description": ""
 							}
 						],
-						"body": {
-							"mode": "raw",
-							"raw": ""
-						},
+						"body": {},
 						"description": ""
 					},
 					"response": []
@@ -106,13 +103,13 @@
 							},
 							{
 								"key": "X-APP-TOKEN",
-								"value": "de2ad4d0-cd5b-4d5a-b85c-08d2f56c9601",
+								"value": "b6cef89b-d0fa-4cda-9c0c-fef0ed50aa14",
 								"description": ""
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Lala\"\n}"
+							"raw": "{\n\t\"name\": \"Judy\",\n\t\"species\": \"Cat\",\n\t\"breed\": \"black\",\n\t\"age\": 13,\n\t\"store\": \"259e6d24-dd73-472f-b472-4afe743eef22\",\n\t\"price\": \"1000.00\",\n\t\"received_date\": \"2005-11-11T12:12:01Z\"\n}"
 						},
 						"description": ""
 					},
@@ -135,18 +132,28 @@
 				{
 					"name": "PUT update specific pet",
 					"request": {
-						"url": "localhost/pets/3",
+						"url": "localhost/pets/6c86abb3-1c2f-45b9-bd29-c23fb87c12f7",
 						"method": "PUT",
 						"header": [
 							{
 								"key": "Content-Type",
 								"value": "application/json",
 								"description": ""
+							},
+							{
+								"key": "X-APP-ID",
+								"value": "mobile",
+								"description": ""
+							},
+							{
+								"key": "X-APP-TOKEN",
+								"value": "b6cef89b-d0fa-4cda-9c0c-fef0ed50aa14",
+								"description": ""
 							}
 						],
 						"body": {
 							"mode": "raw",
-							"raw": "{\n\t\"name\": \"Lala\"\n}"
+							"raw": "{\n\t\"name\": \"Judy\",\n\t\"species\": \"Cat\",\n\t\"breed\": \"black\",\n\t\"age\": 12,\n\t\"store\": \"259e6d24-dd73-472f-b472-4afe743eef22\",\n\t\"price\": \"1000.00\",\n\t\"received_date\": \"2005-11-11T12:12:01Z\"\n}"
 						},
 						"description": ""
 					},
@@ -155,9 +162,20 @@
 				{
 					"name": "DELETE specific pet",
 					"request": {
-						"url": "localhost/pets/4",
+						"url": "localhost/pets/6c86abb3-1c2f-45b9-bd29-c23fb87c12f7",
 						"method": "DELETE",
-						"header": [],
+						"header": [
+							{
+								"key": "X-APP-ID",
+								"value": "mobile",
+								"description": ""
+							},
+							{
+								"key": "X-APP-TOKEN",
+								"value": "b6cef89b-d0fa-4cda-9c0c-fef0ed50aa14",
+								"description": ""
+							}
+						],
 						"body": {
 							"mode": "raw",
 							"raw": ""
@@ -190,7 +208,7 @@
 							},
 							{
 								"key": "X-APP-TOKEN",
-								"value": "de2ad4d0-cd5b-4d5a-b85c-08d2f56c9601",
+								"value": "b6cef89b-d0fa-4cda-9c0c-fef0ed50aa14",
 								"description": ""
 							}
 						],

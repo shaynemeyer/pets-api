@@ -2,7 +2,7 @@
 	"variables": [],
 	"info": {
 		"name": "Pets API",
-		"_postman_id": "17b2ef4d-7040-860d-8e42-46d5c0fd77de",
+		"_postman_id": "2c116c81-f005-15e4-0165-aa72f27b67a2",
 		"description": "A flask rest api",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
 	},
@@ -80,7 +80,10 @@
 								"description": ""
 							}
 						],
-						"body": {},
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
 						"description": ""
 					},
 					"response": []
@@ -217,7 +220,7 @@
 							},
 							{
 								"key": "X-APP-TOKEN",
-								"value": "de2ad4d0-cd5b-4d5a-b85c-08d2f56c9601",
+								"value": "b6cef89b-d0fa-4cda-9c0c-fef0ed50aa14",
 								"description": ""
 							}
 						],
@@ -232,7 +235,7 @@
 				{
 					"name": "GET individual store",
 					"request": {
-						"url": "localhost/stores/6e01b0bd-07d8-4844-b49e-636b178ec7a4",
+						"url": "localhost/stores/259e6d24-dd73-472f-b472-4afe743eef22",
 						"method": "GET",
 						"header": [
 							{
@@ -247,7 +250,67 @@
 							},
 							{
 								"key": "X-APP-TOKEN",
-								"value": "de2ad4d0-cd5b-4d5a-b85c-08d2f56c9601",
+								"value": "b6cef89b-d0fa-4cda-9c0c-fef0ed50aa14",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"neighborhood\": \"College Point\",\n    \"street_address\": \"123 Main Street\",\n    \"city\": \"New York\",\n    \"state\": \"NY\",\n    \"zip\": \"10003\",\n    \"phone\": \"718-453-3232\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "PUT update store",
+					"request": {
+						"url": "localhost/stores/259e6d24-dd73-472f-b472-4afe743eef22",
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-APP-ID",
+								"value": "mobile",
+								"description": ""
+							},
+							{
+								"key": "X-APP-TOKEN",
+								"value": "b6cef89b-d0fa-4cda-9c0c-fef0ed50aa14",
+								"description": ""
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"neighborhood\": \"Smokey Point\",\n    \"street_address\": \"123 Main Street\",\n    \"city\": \"New York\",\n    \"state\": \"NY\",\n    \"zip\": \"10003\",\n    \"phone\": \"718-453-3232\"\n}"
+						},
+						"description": ""
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE individual store",
+					"request": {
+						"url": "localhost/stores/259e6d24-dd73-472f-b472-4afe743eef22",
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"description": ""
+							},
+							{
+								"key": "X-APP-ID",
+								"value": "mobile",
+								"description": ""
+							},
+							{
+								"key": "X-APP-TOKEN",
+								"value": "b6cef89b-d0fa-4cda-9c0c-fef0ed50aa14",
 								"description": ""
 							}
 						],

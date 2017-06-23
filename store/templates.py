@@ -15,5 +15,7 @@ def store_obj(store):
 
 def stores_obj(stores):
     stores = []
+    for store in stores.items:
+        stores_obj.append(store_obj(store))
 
-    return stores
+    return stores_obj
